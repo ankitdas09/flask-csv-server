@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>{{ title }} - Microblog</title>
+    </head>
+    <body>
+        <h1>Letter frequencies</h1>
+        <table>
+            <tr>
+                <th>Letter</th>
+                <th>Frequency</th>
+                <th>Percentage</th>
+            </tr>
+            {% for entry in data %}
+            <tr>
+                <td>{{ entry.letter }}</td>
+                <td>{{ entry.frequency }}</td>
+                <td>{{ entry.percentage }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
